@@ -2,15 +2,27 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Markdown Previewer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="mdPreview.css" />
-    <script src="mdPreview.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    
 </head>
 <body>
     
-    <div>this is a react component test</div>
+    <div id="main-container">
+        <div id="markdown-container"> 
+            <textarea name="editor" id="editor" cols="30" rows="10"></textarea>
+        </div>
+        <div id="preview">
+            
+            </div>
+    </div>
+
+    <!-- User Story #5: When my markdown previewer first loads, the default text in the #editor field should 
+        contain valid markdown that represents at least one of each of the following elements: a header (H1 size), 
+        a sub header (H2 size), a link, inline code, a code block, a list item, a blockquote, an image, and bolded text. -->
 
 </body>
+<script src="mdPreview.js"></script>
 </html>
