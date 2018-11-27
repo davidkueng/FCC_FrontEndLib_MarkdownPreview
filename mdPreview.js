@@ -1,11 +1,22 @@
 
 
 // document.getElementById('editor').innerHTML = marked();
-let changeContent = () => {
-document.getElementById('editor').onkeyup = console.log(marked('this is title'))
-}
+// document.getElementById("editor").innerHTML = "# TEST"
 
-document.getElementById('preview').innerHTML =
-    marked('# Marked in browser\n\nRendered by **marked**.');
+window.onload = changeContent = () => {
+    document.getElementById('preview').innerHTML = marked(document.getElementById('editor').value);
+    return false;
+    }
+
+
+
+
+// {
+// document.getElementById('editor').onchange = document.getElementById('preview').value;
+// return false
+// }
+
+// document.getElementById('preview').innerHTML =
+//     marked('# Marked in browser\n\nRendered by **marked**.');
 
 
