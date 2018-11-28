@@ -12,13 +12,34 @@
     
     <div id="main-container">
         <div id="markdown-container"> 
-            <textarea type="text" name="editor" id="editor" cols="30" rows="10" oninput="changeContent()"
-># This is H1 header
+            <h3>Editor (type some markdown here)</h3>
+            <textarea type="text" name="editor" id="editor" oninput="changeContent()"
+># This is a H1 header
 ## This is a H2
 [link to my Github](https://github.com/davidkueng)
+- This
+- is
+- a list
+
+
+    let someFunction = () => { 
+    if (text === markdown) { 
+    return markedtext; 
+       } 
+     }
+ > a blockquote and some inline code: `let markdown = [1,2,3,4]`
+
+**some bolded text**
+
+***and some random image***
+
+![Some random image:](https://www.gfxmag.com/wp-content/uploads/2016/07/javascript-vector-logo-1.png)
 </textarea>
-        </div>
+        </div>   
+        <div id="preview-container">
+        <h3>Preview</h3>                     
         <div id="preview"></div>
+    </div>
     </div>
 
     <!-- User Story #5: When my markdown previewer first loads, the default text in the #editor field should 
@@ -27,4 +48,5 @@
 
 </body>
 <script src="mdPreview.js"></script>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
